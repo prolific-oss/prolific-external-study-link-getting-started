@@ -4,15 +4,15 @@
 [![Status: Beta](https://img.shields.io/badge/Status-Beta-orange.svg)]()
 [![Purpose: Educational](https://img.shields.io/badge/Purpose-Educational-green.svg)]()
 
-A minimal, end-to-end example showing how to programmatically create, publish, and analyze a survey on Prolific using the API.
+A minimal, end-to-end example showing how to programmatically create, publish, and analyze a Prolific study using an **external study URL** (Google Forms, Qualtrics, or any custom URL).
 
-This repository is designed as a getting-started demo for researchers, engineers, and AI/ML practitioners who want to quickly collect high-quality human responses using Prolific, often **within minutes of launching a study**.
+This repository is designed as a getting-started demo for researchers, engineers, and AI/ML practitioners who want to quickly collect high-quality human responses using Prolific with their own external survey or study platform, often **within minutes of launching a study**.
 
 ## Files
 
-- **[`config.yaml`](config.yaml)** - Survey configuration (questions, rewards, participant settings)
+- **[`config.yaml`](config.yaml)** - Study configuration (external URL, rewards, participant settings)
 - **[`prolific_helpers.py`](prolific_helpers.py)** - Helper functions for Prolific API interactions
-- **[`prolific-survey-getting-started.ipynb`](prolific-survey-getting-started.ipynb)** - Main notebook workflow
+- **[`prolific-external-study-link-getting-started.ipynb`](prolific-external-study-link-getting-started.ipynb)** - Main notebook workflow
 - **[`environment.yaml`](environment.yaml)** - Conda environment specification
 - **[`.env.example`](.env.example)** - Template for environment variables
 
@@ -36,14 +36,15 @@ This repository is designed as a getting-started demo for researchers, engineers
 
 ## Usage
 
-1. Edit [`config.yaml`](config.yaml) to customize your study
-2. Run the [Jupyter notebook](prolific-survey-getting-started.ipynb) to create and publish your survey
+1. Edit [`config.yaml`](config.yaml) to set your external study URL (Google Forms, Qualtrics, or custom URL) and customize study parameters
+2. Run the [Jupyter notebook](prolific-external-study-link-getting-started.ipynb) to create and publish your study
 3. View results with demographic breakdowns 
 
 ## Features
 
-- Create surveys and studies via Prolific API
-- Auto-publish and monitor submissions
+- Create Prolific studies using external URLs (Google Forms, Qualtrics, SurveyMonkey, or custom platforms)
+- Programmatically publish studies via Prolific API
+- Auto-monitor submissions and collect responses
 - Visualize results by demographics
 - Export data to CSV
 
