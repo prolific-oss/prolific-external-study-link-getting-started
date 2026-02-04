@@ -1,4 +1,4 @@
-name: rise_slides
+name: external_url_study
 channels:
   - conda-forge
   - defaults

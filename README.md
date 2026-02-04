@@ -31,7 +31,7 @@ This repository is designed as a getting-started demo for researchers, engineers
 2. Install the required dependencies. For conda users, an [`environment.yaml`](environment.yaml) file is provided for convenience:
    ```bash
    conda env create -f environment.yaml
-   conda activate rise_slides
+   conda activate external_url_study
    ```
 
 ## Usage
